@@ -5,11 +5,9 @@
 それ以外はFalseを出力すること
 
 def in1to10(num, outside_mode)
-  if num >= 1 && num <=10
+  if (num >= 1 && num <= 10) || outside_mode
     puts "True"
-  elsif num >= 1 && num <=10 || outside_mode == "True"
-    puts "True"
-  else 
+  else
     puts "False"
   end
 end
