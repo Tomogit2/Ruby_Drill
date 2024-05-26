@@ -7,3 +7,13 @@ end
 puts "何回表示させますか？"
 
 output()
+
+
+num = get to.i
+
+def output(num)
+num. times do
+  puts "Hello!"
+end
+
+output(num)
