@@ -6,14 +6,37 @@ end
 
 puts "何回表示させますか？"
 
+
+
+output()
+
+num = gets to_
+
 output()
 
 
-num = get to.i
+num = get 
 
 def output(num)
 num. times do
   puts "Hello!"
 end
 
+
 output(num)
+
+
+
+
+#模範解答
+def output(num)
+  num.times do
+    puts "Hello!" 
+  end
+end
+
+puts "何回表示させますか？"
+num = gets.to_i
+output(
+output(num)
+
