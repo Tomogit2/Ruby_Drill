@@ -5,6 +5,7 @@
 対象となる文字列の中から、"hi"という特定の文字列の数を取得すること
 上記で取得した数を出力すること
 
+
 str = "abc hi ho"
 def count_hi(str)
   count = str.scan("hi").length
@@ -13,6 +14,19 @@ end
 
 
 count_hi(str)
+
+雛形
+1
+2
+3
+4
+5
+6
+def count_hi(str)
+  #  処理を記述
+end
+
+
 # 呼び出し例（引数には対象となる文字列を指定します）
 count_hi('abc hi ho')
 出力例：
