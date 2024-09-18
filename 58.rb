@@ -49,7 +49,7 @@ end
 番号が入力されたら、名前,パンチ力,キック力,ジャンプ力を一覧表示します。
 --------------------------------------------------
 
-sentoryoku_data = []
+@sentoryoku_data = []
 
 def register_data
   puts '名前を入力してください'
@@ -70,17 +70,26 @@ def register_data
   end
 
   sentoryoku = { name: name, panch: panch, kick: kick, jump: jump }
-  sentoryoku_data << sentoryoku
+  @sentoryoku_data << sentoryoku
 end
 
 def show_data_list
   puts '見たい人の番号を選択してください'
   index = gets.to_i
 
-  each_with_index do |sentoryoku|
-    sentoryoku_data [ index, name ]
-    puts [ index: name ]
+  @sentoryoku_data.each_with_index do |sentoryoku, index|
+    puts "#{index + 1}: #{sentoryoku[:name]}"
   end
+
+  input = gets.to_i - 1
+  show_data(@sentoryoku_data[input])
+end
+
+def show_data(sentoryoku)
+  puts "名前: #{sentoryoku[:name]}"
+  puts "パンチ力: #{sentoryoku[:panch]}"
+  puts "キック力: #{sentoryoku[:kick]}"
+  puts "ジャンプ力: #{sentoryoku[:jump]}"
 end
 
 while true
