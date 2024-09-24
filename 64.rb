@@ -21,6 +21,6 @@ now = Time.new
 formatted_time = now.strftime("西暦%Y年%-m月%-d日")
 formatted_time_yobi = now.strftime("%A")
 
-puts "現在はformatted_time"
-puts "formatted_time_yobiです"
+puts "現在は#{formatted_time}"
+puts "#{formatted_time_yobi}です"
 
